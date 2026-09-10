@@ -451,7 +451,7 @@ function makeInfoItem(iconHTML, text) {
 function showAllDetails(guess) {
     const guesserName = getGuesserName(guess);
     const dob  = getField(guess, [['date'], ['dob'], ['due']]) || "Unknown";
-    const time = getField(guess, [['time']]) || "Unknown";
+    const time = getField(guess, [['time of']]) || "Unknown";
 
     const genderA = getField(guess, [['baby a', 'boy'], ['baby a', 'girl'], ['baby a', 'gender'], ['baby a', 'sex']]);
     const isBoyA  = genderA.toLowerCase().includes("boy");
